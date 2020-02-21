@@ -18,6 +18,8 @@ class Zandronum(object):
         self.rcon = password
         self.debug = False
 
+        self.once = 0
+        self.fullLog = []
         self.currentLog = []
         self.map = ''
 
@@ -79,6 +81,9 @@ class Zandronum(object):
 
                 i = d[0]
                 d = d[1:]
+                if self.once == 0:
+                    self.fullLog.append(d)
+                    self.once = 1
 
             if i == svrc['Salt']:
                 salt = d[0:32]
@@ -100,6 +105,7 @@ class Zandronum(object):
                 toprint = cleaned_string.rstrip('\0')
                 try:
                     self.currentLog.append(toprint)
+                    self.fullLog.append(toprint)
                 except Exception as err:
                     self.currentLog.append(err)
             elif i == svrc['Update']:
