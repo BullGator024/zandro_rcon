@@ -16,3 +16,4 @@ Zandronum RCon console made with python (3.8)
 <br>
 <h5>The latest lines of the log are saved in 'currentLog'</h5>
 <h6>Any doubts, yell at Bull Gator#2394</h6>
+<h6>This is currently just v1.0 so its pretty barebones atm.<h6>
