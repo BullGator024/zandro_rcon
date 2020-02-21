@@ -14,6 +14,6 @@ Zandronum RCon console made with python (3.8)
 <li>If you need to disconnect from the server, call 'disconnect'</li>
 </ul>
 <br>
-<h5>The latest lines of the log are saved in 'currentLog'</h5>
+<h5>The latest lines of the log are saved in 'currentLog' and the entire log is in 'fullLog'</h5>
 <h6>Any doubts, yell at Bull Gator#2394</h6>
 <h6>This is currently just v1.0 so its pretty barebones atm, code might also be a """bit""" disordered xd.<h6>
