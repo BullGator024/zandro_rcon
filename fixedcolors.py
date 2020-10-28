@@ -101,12 +101,10 @@ clist = [
 ]
 
 
-def purifystring(string):
-	string = string.replace('','\\c')
-	string = string.replace('','\\c')
-	o = string
-	for i in range(len(clist)):
-		if clist[i] in string:
-			o = string.replace(clist[i], '')
-			string = string.replace(clist[i], '')
-	return o
+def get_color_less(the_string: str):
+	''' Returns the raw message from the server
+		Haha, text colors :)
+	'''
+	for i in clist:
+		the_string = the_string.replace(i, '')
+	return the_string
