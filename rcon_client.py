@@ -10,6 +10,7 @@ from headers import svrc, clrc, protocol_ver, svrcu
 h = huffman.HuffmanObject(huffman.SKULLTAG_FREQS)
 
 class ZandronumError(Exception):
+    pass
 
 class rcon_client():
     ''' Instance of the rcon client for Zandronum 3.0 
